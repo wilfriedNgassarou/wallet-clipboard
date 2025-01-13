@@ -2,6 +2,7 @@ import { motion } from "motion/react";
 import { useState } from "react";
 import { CardItem } from "./components/card-item";
 import { ActiveCard } from "./components/active-card";
+import { Credits } from "./components/credits";
 
 export const cards = [
   {
@@ -23,6 +24,7 @@ function App() {
 
   return (
     <section className="w-full h-dvh flex items-center justify-center">
+      <Credits />
       <motion.section 
         layout 
         className="w-80 p-4"
